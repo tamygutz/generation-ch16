@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/formularios.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+<form>
+
+    <!-- <input type="text" placeholder="Nombre">
+    <input type="button" value="Enviar"> -->
+    
+    <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text"
+        placeholder="Panchito López"
+        name="nombre" id="nombre" required>
+    </div>
+
+    <label for="">Elige el mejor framework
+        <input list="Frameworks">  
+    </label>
+    
+    <datalist id="Frameworks">
+        <option value="React"></option>
+        <option value="Vue"></option>
+        <option value="Svelte"></option>
+        <option value="Angular"></option>
+    </datalist>
+
+    <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" 
+        name="email" 
+        id="email"
+        placeholder="panchito@gmail.com" required>
+    </div>  
+    
+    <div class="campo">
+        <labe class="password">Contraseña</labe>
+        <input type="password" name="password" id="password" required>
+    </div>
+
+    <div class="campo">
+        <label for="color" class="color">color</label>
+        <input type="color" class="color"
+        id="color">
+    </div>
+
+    <div class="campo">
+        <Label class="number">Numero</Label>
+        <input type="number" class="number"
+        name="number"
+        id="number" min="10" max="21"
+        step="2">
+    </div>
+
+    <div class="campo">
+        <Label class="range">Rango</Label>
+        <input type="range" class="number"
+        name="number"
+        id="number" min="10" max="21"
+        step="2">
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Enviar">
+    </div>
+
+
+</form>
+
+<h3>Input de rango con marcas</h3>
+<input type="range" list="tickmarks" min="0" max="10">
+
+<datalist id="tickmarks">
+    <option value="0">
+    <option value="5">
+    <option value="10">
+</datalist>
+
+</body>
+</html>
+
