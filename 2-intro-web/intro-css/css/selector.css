@@ -1,0 +1,13 @@
+div {
+    border: red 6px solid;
+    margin: 20px;
+    padding: 3%;
+}
+
+/* div ~ p{
+    color: red;
+} */
+
+p[unico]{
+    color: red;
+}
