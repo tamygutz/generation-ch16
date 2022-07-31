@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(190, 253, 154);
+    height: 60px;
+}
+
+ul{
+    display: flex;
+    height: 60px;
+    align-content:center;
+    justify-content: flex-end;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 26px;
+    margin: 5px 15px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.contenedor {
+    max-width: 1500px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

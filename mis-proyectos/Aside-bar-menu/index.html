@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Barra Menu</title>
+</head>
+<body>
+    <header>
+        <div class="inner-width">
+            <h1>Tamara Sarai Gutiérrez Flores</h1>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header> -->
+    <h1>Tamara Sarai Gutiérrez Flores</h1>
+    <h3>Desarrolladora Java FullStack</h3> 
+
+    <div class="navigation-menu"> -->
+        <nav>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mi</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Certificaciones</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </nav>
+    </div>
+
+    <script>
+        $(".menu-icon").click(function () {
+            $(this).toggleClass("active");
+            $(".navigation-menu").toggleClass("active");
+            $(".menu-icon i").toggleClass("fa-times");
+        });
+    </script>
+</body>
+</html>

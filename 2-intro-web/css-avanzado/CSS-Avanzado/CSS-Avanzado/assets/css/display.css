@@ -1,0 +1,72 @@
+.cuadro-padre {
+  background-color: burlywood;
+  height: 600px;
+  display: flex;
+
+  flex-direction: row;
+
+  /* nos permite alinear en horizontal */
+  /* recuerden a word se acomoda dependiendo donde queramos */
+  justify-content: space-between;
+
+  /* nos permite alinear en vertical */
+  align-items: center;
+}
+.cuadro {
+  background-color: cornflowerblue;
+  height: 100px;
+  width: 100px;
+  padding: 50px 40px 30px 20px;
+  border: 10px solid rgb(60, 0, 255);
+  margin: 20px 40px;
+  border-radius: 10px 20px 30px 40px;
+  display: inline-block;
+}
+
+.el-1 {
+  background-color: rgb(244, 114, 22);
+  align-self: flex-start;
+  flex-grow: 9;
+}
+.el-2 {
+  background-color: rgb(30, 210, 87);
+  flex-grow: 1;
+}
+.el-3 {
+  background-color: rgb(218, 94, 225);
+  flex-grow: 1;
+  align-self: flex-end;
+}
+.el-4 {
+  background-color: rgb(30, 144, 210);
+  flex-grow: 1;
+}
+/* .el-5 {
+  background-color: rgb(210, 30, 30);
+  flex-grow: 1;
+} */
+
+/* introduccion a bootstrap */
+
+.contenedor {
+  height: 200px;
+  background-color: cornflowerblue;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fila {
+  display: flex;
+}
+
+.columna {
+  flex-grow: 1;
+}
+
+.color-rojo{
+background-color: red;
+
+
+}
+

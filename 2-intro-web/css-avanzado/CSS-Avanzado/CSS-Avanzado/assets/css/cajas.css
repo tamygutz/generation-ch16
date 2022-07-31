@@ -1,0 +1,65 @@
+.cuadro {
+    background-color: cornflowerblue;
+    height: 150px;
+    width: 150px;
+    /* margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px; */
+
+    padding: 50px 40px 30px 20px;
+
+    border: 10px solid rgb(60, 0, 255);
+
+    margin: 20px 40px;
+
+border-radius: 10px 20px 30px 40px;
+
+
+
+
+
+
+}
+
+
+
+.el-1{
+background-color: rgb(244, 114, 22);
+/* position: fixed;
+bottom: 0;
+right: 0; */
+
+}
+.el-2{
+background-color: rgb(30, 210, 87);
+/* position: absolute;
+right: 0;
+top: 0; */
+position: sticky;
+top: 0;
+
+
+}
+.el-3{
+background-color: rgb(218, 94, 225);
+/* position: relative;
+left: 200px;
+bottom: 200px; */
+
+}
+.el-4{
+background-color: rgb(30, 144, 210);
+position: static;
+
+}
+.el-5{
+background-color: rgb(210, 30, 30);
+position: static;
+
+}
+.el-6{
+background-color: rgb(30, 168, 210);
+position: static;
+
+}
