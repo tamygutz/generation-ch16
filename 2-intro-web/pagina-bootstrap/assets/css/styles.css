@@ -1,6 +1,8 @@
-.img-carousel{
-    height: calc(50vh - 76px);
+.img-carrousel {
+    height: calc(50vh - 76px); 
     object-fit: cover;
+    width: 100%;
+    display: block;
 }
 
 body{
@@ -12,7 +14,13 @@ body{
     object-fit: cover;
 }
 
-.img-genero{
-    height: 200px;
-    width: 200px;
+@media (max-with: 200px){
+    body{
+        display: none;
+    }
 }
+.caja{
+    position: relative;
+    top: -40px;
+}
+
