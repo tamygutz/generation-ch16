@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores. Accediendo al DOM</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<style type="text/css" media="screen">
+		.destacado {
+			color: #fc0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="nombre">Nombre del detalle</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dignissimos quae architecto beatae vel repudiandae, quia velit rem maxime magni quo, eveniet natus aut nobis! Ad quis, qui quos quaerat.</p>
+				<blockquote>
+					<p id="descripcion">Esto es una descripción.</p>
+					<footer>
+					<script>
+					var fecha = new Date();
+					var dia = fecha.getDate();
+					var mes = fecha.getMonth()+1;
+					var anio = fecha.getFullYear();
+					document.write(dia+'/'+mes+'/'+anio);
+					</script>
+					</footer>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var elemento;
+		var descripcion;
+
+		descripcion = document.getElementById('descripcion').innerHTML;
+		console.log(descripcion);
+		descripcion += ' Modificada.';
+		document.getElementById('descripcion').innerHTML = descripcion;
+
+		elemento = document.querySelector('h1');
+		elemento.className += ' destacado'; 
+
+		/*
+		document.getElementsByClassName('nombre-clase');
+		document.getElementsByTagName('etiqueta');
+		element.querySelector('p.nombre-clase'); 	// devuelve el primero, IE8+
+		element.querySelectorAll('p.nombre-clase');	// devuelve todos, IE8+
+		*/
+	</script>
+</body>
+</html>

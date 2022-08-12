@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores. Operaciones con datos de texto</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var inicio = "En un lugar de La Mancha...";
+		var fin = " de cuyo nombre no quiero acordarme...";
+		var completa = inicio + fin;
+
+		console.log('Principio original: '+inicio);
+		console.log('Mayúsculas: '+inicio.toUpperCase());
+		console.log('Minúsculas: '+inicio.toLowerCase());
+		console.log('Longitud de la inicio: '+inicio.length);
+		console.log('Letra posicion 3: '+inicio.charAt(3));
+		console.log('Posición palabra "lugar": '+inicio.indexOf('lugar'));
+		console.log('Extracción "En": '+inicio.substring(0,2));
+		console.log('Completa: '+completa);
+		
+	</script>
+</body>
+</html>

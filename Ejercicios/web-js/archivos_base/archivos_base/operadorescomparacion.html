@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores. Operadores de comparación</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var a = 10;
+		var b = 2;
+		var c = 10;
+
+		var cadena10 = '10';
+		var nombre_1 = "Marcos";
+		var nombre_2 = "Pedro";
+
+		console.log('Igualdad: ' + (a==b) ); //false
+		console.log('Distinto: ' + (a!=b) ); // true
+		console.log('Igualdad absoluta: ' + (a===c) ); // true
+		console.log('Igualdad absoluta: ' + (a===cadena10) ); // false
+
+		console.log('Mayor que: ' + (a > b) ); // true
+		console.log('Menor que: ' + (a < b) ); // false
+		console.log('Mayor o igual: ' + (a >= c) ); // true
+		console.log('Y en cadenas: ' + (nombre_1 > nombre_2) ); // false
+		
+	</script>
+</body>
+</html>

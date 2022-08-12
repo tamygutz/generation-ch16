@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores. Estructuras de control: switch</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<style type="text/css" media="screen">
+		.seleccionado {
+			background-color: #fc0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Estructura condicional: switch</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit perferendis dolorum quidem quibusdam expedita minima adipisci aspernatur tempora explicabo. Laudantium dignissimos voluptatem eaque commodi rem aliquid totam fuga veniam repudiandae!</p>
+				<ul id="menu" class="list-inline">
+					<li>Primero</li>
+					<li class="seleccionado">Segundo</li>
+					<li>Tercero</li>
+					<li>Cuarto</li>
+					<li>Quinto</li>
+					<li>Sexto</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var i;
+		var longitud;
+		var colores = ['#ffcc00', '#cc00ff', '#00ffcc', '#ff00cc', '#ccff00', '#00ccff'];
+		var elementos = document.querySelectorAll('#menu>li');
+
+		longitud = elementos.length;
+		for (i=0; i<longitud; i++) {
+
+			elementos[i].style.color = colores[i];
+
+			switch (i) {
+				case 0:
+				case 1:
+					elementos[i].style.fontSize = '12px';
+				break;
+				case 2:
+				case 3:
+					elementos[i].style.fontSize = '16px';
+				break;
+				default:
+					elementos[i].style.fontSize = '22px';
+				break;
+			}
+
+			
+		}
+
+	</script>
+</body>
+</html>

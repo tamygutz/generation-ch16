@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores. Ámbito de las variables</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Ámbito de las variables</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<script>
+					console.log('---------------------');
+					console.log('Antes de definir global:');
+					console.log(global);
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var global = 'hola'; 
+
+
+		console.log('---------------------');
+		console.log('Ámbito general de la ventana (objeto window):');
+		console.log('Valor global: '+window.global);
+		// console.log('Valor local: '+local);
+
+		miFuncion();
+
+		function miFuncion() 
+		{
+			var local = 'adiós';
+			var global = 'otro';
+
+			console.log('---------------------');
+			console.log('Dentro de la miFuncion:');			
+			console.log('Valor global: '+global);
+			console.log('Valor global de window: '+window.global);
+			console.log('Valor local: '+local);
+		}
+
+		
+		var miFuncionLiteral = function() {
+			console.log('---------------------');
+			console.log('Esto es una función literal.');
+			console.log('Valor global: '+global);
+		}
+		miFuncionLiteral();
+
+	</script>
+</body>
+</html>

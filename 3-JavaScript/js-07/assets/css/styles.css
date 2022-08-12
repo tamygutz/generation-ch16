@@ -1,0 +1,19 @@
+/* Estilos del botón */
+.btn-perrito{
+    margin: auto;
+    display: block;
+    background-color: blueviolet;
+    color: wheat; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+}
+
+/* Estilos para la imagen */
+#img-perrito{
+display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 200px;
+
+}

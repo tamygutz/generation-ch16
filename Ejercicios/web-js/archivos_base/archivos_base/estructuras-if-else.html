@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores. Estructuras de control: if else</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<style type="text/css" media="screen">
+		.seleccionado {
+			background-color: #fc0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Estructura condicional: if - else</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit perferendis dolorum quidem quibusdam expedita minima adipisci aspernatur tempora explicabo. Laudantium dignissimos voluptatem eaque commodi rem aliquid totam fuga veniam repudiandae!</p>
+				<ul id="menu" class="list-inline">
+					<li>Primero</li>
+					<li class="seleccionado">Segundo</li>
+					<li>Tercero</li>
+					<li>Cuarto</li>
+					<li>Quinto</li>
+					<li>Sexto</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var elemento = document.getElementById('menu').className;
+
+		if ( elemento.indexOf('prueba') >= 0 && elemento.indexOf('list-inline') >= 0 ) {
+			// instrucciones si se cumple condicion1
+			console.log('El menú tiene la clase prueba Y list-inline.');
+		} else if ( elemento.indexOf('list-inline') >= 0 ) {
+			// instrucciones si se cumple condicion2
+			document.getElementById('menu').style.fontSize = '24px';
+			console.log('El menú tiene la clase list-inline.');
+		}
+		else {
+			// instrucciones si no se cumple ninguna condición de las anteriores
+			console.log('No tiene ni la clase prueba ni la clase list-inline.');
+		}
+	</script>
+</body>
+</html>

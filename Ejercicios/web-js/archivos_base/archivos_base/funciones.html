@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores. Funciones</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Funciones. Qué son y para qué se usan</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Las funciones se emplean para reutilizar fragmentos de código que son aplicables a diferentes partes del programa, aunque con diferentes valores, exponen la misma funcionalidad.</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function saludar (nombre) {
+			console.log('Buenos días '+nombre+'.');
+			console.log('¿Cómo estás?');
+		}
+
+		function calcularAreaRectangulo (base, altura) {
+			console.log('El área es: '+(base * altura) );
+		}
+
+		saludar('Marcos');
+		saludar('Pepe');
+
+		calcularAreaRectangulo(2,4);
+		calcularAreaRectangulo(10, 20);
+	</script>
+</body>
+</html>
