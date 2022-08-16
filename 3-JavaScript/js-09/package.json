@@ -1,0 +1,14 @@
+{
+  "name": "npm",
+  "version": "2.0.0",
+  "description": "Una prueba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tamy-gutz",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.2"
+  }
+}
